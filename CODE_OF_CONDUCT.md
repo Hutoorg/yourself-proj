@@ -75,7 +75,7 @@ This code of conduct and its related procedures also applies to unacceptable beh
 
 ## 10. Contact info
 
-yourself-proj@gmail.com or https://yourself-proj.netlify.app/contact
+ur.self.proj@gmail.com or https://yourself-proj.netlify.app/contact
 
 ## 11. License and attribution
 
