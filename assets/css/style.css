@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;600&family=Noto+Sans:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/** Header */
+header {
+  background: rgb(205, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgb(205, 255, 255) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  color: black;
+  cursor: default;
+  user-select: none;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  float: none;
+  display: inline-block;
+  display: flex;
+}
+
+nav a.navi {
+  color: black;
+  border-radius: 10px;
+  transition-duration: 800ms;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a.navi:hover {
+  background-color: rgba(231, 219, 255, 0.6);
+}
+
+a.navi.active {
+  font-weight: bold;
+}
+
+/** Content */
+h1 {
+  font-family: "Mali", cursive;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.descriptions {
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.control {
+  margin-top: 5%;
+  text-align: center;
+}
+
+button.signup {
+  background-color: rgb(190, 255, 190);
+  color: black;
+  border: none;
+  height: 30px;
+  width: 15rem;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  transition-duration: 800ms;
+  font-family: "Mali", cursive;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 auto;
+}
+
+button.signup:hover {
+  background-color: rgb(205, 255, 255);
+}
+
+#usersh {
+  background-color: rgb(231, 219, 255);
+  color: black;
+  border: none;
+  height: 30px;
+  width: 10rem;
+  border-radius: 10px;
+  padding: 0 auto;
+  padding-left: 10px;
+  font-family: "Mali", cursive;
+  font-weight: 500;
+}
+
+button.finduser {
+  background-color: rgb(205, 255, 255);
+  color: black;
+  border: none;
+  height: 25px;
+  width: 4rem;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  transition-duration: 800ms;
+  font-family: "Mali", cursive;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 auto;
+}
+
+button.finduser:hover {
+  background-color: rgb(190, 255, 190);
+}
+
+/** Footer */
+footer {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(190, 255, 190) 100%
+  );
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer a {
+  color: black;
+}
+
+/** For Mobile */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    margin-left: 10px;
+  }
+
+  nav a.navi {
+    padding: 5px;
+  }
+
+  .descriptions {
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+
+  button.signup {
+    font-size: 14px;
+    width: 80%;
+  }
+
+  #usersh {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  button.finduser {
+    font-size: 12px;
+    width: 10%;
+  }
+
+  footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

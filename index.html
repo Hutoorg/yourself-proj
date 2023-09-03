@@ -13,20 +13,25 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header>
-      <h2>Your Self Project</h2>
-      <span class="material-symbols-outlined"> science </span>
+      <div class="header-name">
+        <h2>
+          Your Self Project
+          <span class="material-symbols-outlined"> science </span>
+        </h2>
+      </div>
       <nav>
-        <a class="active" href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a class="navi active" href="#">Home</a>
+        <a class="navi" href="#">About</a>
+        <a class="navi" href="#">Contact</a>
       </nav>
-      <main>
-        <h1>Your Self Project</h1>
+    </header>
+    <main>
+      <h1>Your Self Project</h1>
+      <div class="descriptions">
         <p>
           Your Self Project is a website where you can share your thoughts,
           ideas, and projects with the world. It is a place to express yourself
@@ -44,20 +49,38 @@
           explore your creativity and to connect with your true self. So what
           are you waiting for? Start your Your Profile today!
         </p>
-      </main>
-      <footer>
-        <p>Copyright &copy; 2023 Your Self Project</p>
-        <p>
-          The site is licensed under
-          <a href="https://www.mozilla.org/en-US/MPL/"
-            >Mozilla Public License Version 2.0</a
-          >.
-        </p>
-        <p>
-          Some part of this project is on
-          <a href="https://github.com/Hutoorg/yourself-proj">GitHub</a>
-        </p>
-      </footer>
-    </header>
+      </div>
+      <div class="control">
+        <button class="signup" onclick="hp_signup()">Sign Up</button>
+        <div id="usrSearch">
+          <input
+            type="search"
+            name="username"
+            id="usersh"
+            placeholder="Username"
+          />
+          <button class="finduser" onclick="searchUser()">Find</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023 Your Self Project</p>
+      <p>
+        The site is licensed under
+        <a href="https://www.mozilla.org/en-US/MPL"
+          >Mozilla Public License Version 2.0</a
+        >
+        and
+        <a
+          href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
+          >CC-BY-NC-ND 4.0</a
+        >.
+      </p>
+      <p>
+        Some part of this project is on
+        <a href="https://github.com/Hutoorg/yourself-proj">GitHub</a>
+      </p>
+    </footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
